@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura</title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+
+    <main class="caixa">
+        <h1>Missão Aura </h1>
+        <p>Descubra seu perfil!</p>
+
+        <form id="formulario">
+            <label for="nome">Seu nome Completo:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            <label for="data">Sua data de nascimento:</label>
+            <input type="date" id="data" required>
+
+            <h3>1. O que você prefere fazer?</h3>
+            <label class="opcao"><input type="radio" name="p1" value="1"> Construir</label>
+            <label class="opcao"><input type="radio" name="p1" value="2"> Investigar</label>
+            <label class="opcao"><input type="radio" name="p1" value="3"> Explorar</label>
+            <label class="opcao"><input type="radio" name="p1" value="4"> Planejar</label>
+
+            <h3>2. Qual ambiente você prefere?</h3>
+            <label class="opcao"><input type="radio" name="p2" value="1"> Laboratório</label>
+            <label class="opcao"><input type="radio" name="p2" value="2"> Centro de pesquisa</label>
+            <label class="opcao"><input type="radio" name="p2" value="3"> Natureza</label>
+            <label class="opcao"><input type="radio" name="p2" value="4"> Escritório</label>
+
+            <h3>3. Qual é sua maior qualidade?</h3>
+            <label class="opcao"><input type="radio" name="p3" value="1"> Criatividade</label>
+            <label class="opcao"><input type="radio" name="p3" value="2"> Curiosidade</label>
+            <label class="opcao"><input type="radio" name="p3" value="3"> Coragem</label>
+            <label class="opcao"><input type="radio" name="p3" value="4"> Organização</label>
+
+            <h3>4. Qual tarefa você escolheria?</h3>
+            <label class="opcao"><input type="radio" name="p4" value="1"> Criar algo</label>
+            <label class="opcao"><input type="radio" name="p4" value="2"> Descobrir algo</label>
+            <label class="opcao"><input type="radio" name="p4" value="3"> Conhecer lugares</label>
+            <label class="opcao"><input type="radio" name="p4" value="4"> Organizar uma missão</label>
+
+            <p id="aviso" role="alert" aria-live="polite"></p>
+
+            <button type="submit">Descobrir meu perfil</button>
+        </form>
+
+        <!-- O resultado fica escondido até o envio do formulário -->
+        <section id="areaResultado" hidden aria-live="polite">
+            <h2>Seu resultado!</h2>
+            <p id="resultado"></p>
+            <img id="imagem" alt="Ilustração do perfil descoberto">
+            <p id="descricao"></p>
+            <button type="button" id="refazer">Refazer</button>
+        </section>
+
+        <p class="rodape">aura67</p>
+    </main>
+<script src="script.js" defer></script>
+</body>
+</html>
